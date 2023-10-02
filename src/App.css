@@ -1,38 +1,66 @@
-.App {
+/* ----- Estilos para la parte del Clima ----- */
+/* App.js - Contenedor del Clima */
+.Dash-clima {
+  background: linear-gradient(45deg, #35838f, #a8d7dd);
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ./componentes/ClimaHoy.js Estilos */
+/* Contenedor */
+.ClimaHoy-contenedor {
+  display: grid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.H1 {
+  color: #d9d9d9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Contenedor de los datos */
+.ClimaHoy-Cont-Datos {
+  background: linear-gradient(45deg, #d18844, #f6dd87);
+  gap: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Contenedor de la escala de temperatura */
+.ClimaHoy-temp-escala {
+  display: grid;
+  color: #d9d9d9;
+  margin: 0 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Contenedor de la barra y hora */
+.ClimaHoy-temp-hora {
+  display: grid;
+}
+
+/* Contenedor de las barras */
+.ClimaHoy-temp-cont-barra {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  height: 135px;
+}
+
+.ClimaHoy-temp-barra {
+  background-color: #fff;
+  width: 20px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/* Contenedor de las horas */
+.ClimaHoy-temp-cont-hora-x {
+  display: flex;
+  align-items: end;
+  margin: 0;
+  gap: 10px;
+}
+
+.ClimaHoy-temp-hora-x {
+  margin: 0 auto 10px;
+  color: #fff;
 }
