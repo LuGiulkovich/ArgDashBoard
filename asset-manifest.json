@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ArgDashBoard/static/css/main.3eea0ba4.css",
-    "main.js": "/ArgDashBoard/static/js/main.afa24d65.js",
+    "main.css": "/ArgDashBoard/static/css/main.ce21763f.css",
+    "main.js": "/ArgDashBoard/static/js/main.763ddfb1.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
     "index.html": "/ArgDashBoard/index.html",
-    "main.3eea0ba4.css.map": "/ArgDashBoard/static/css/main.3eea0ba4.css.map",
-    "main.afa24d65.js.map": "/ArgDashBoard/static/js/main.afa24d65.js.map",
+    "main.ce21763f.css.map": "/ArgDashBoard/static/css/main.ce21763f.css.map",
+    "main.763ddfb1.js.map": "/ArgDashBoard/static/js/main.763ddfb1.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eea0ba4.css",
-    "static/js/main.afa24d65.js"
+    "static/css/main.ce21763f.css",
+    "static/js/main.763ddfb1.js"
   ]
 }
