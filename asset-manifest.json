@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/ArgDashBoard/static/css/main.ce21763f.css",
-    "main.js": "/ArgDashBoard/static/js/main.763ddfb1.js",
+    "main.css": "/ArgDashBoard/static/css/main.72000031.css",
+    "main.js": "/ArgDashBoard/static/js/main.133c9a37.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
+    "static/media/thermometer-celsius.svg": "/ArgDashBoard/static/media/thermometer-celsius.6997f5852f3d55076b9a1fcf03ee2492.svg",
+    "static/media/wind-beaufort-11.svg": "/ArgDashBoard/static/media/wind-beaufort-11.0da6e36c14edc3e518f030b41a162835.svg",
+    "static/media/uv-index-6.svg": "/ArgDashBoard/static/media/uv-index-6.d12bc4a0ec8a32081a624ce4af386719.svg",
+    "static/media/partly-cloudy-day.svg": "/ArgDashBoard/static/media/partly-cloudy-day.22af82f41162d6ba6559909abad9e54d.svg",
+    "static/media/sunrise.svg": "/ArgDashBoard/static/media/sunrise.7bd9ac1ef5536646bd0fe926afdfb495.svg",
+    "static/media/sunset.svg": "/ArgDashBoard/static/media/sunset.6251769d5f3fd2b94bfa2571a1c12695.svg",
+    "static/media/moon-last-quarter.svg": "/ArgDashBoard/static/media/moon-last-quarter.2b5f1eafb20573402876f09889fdc1dd.svg",
     "index.html": "/ArgDashBoard/index.html",
-    "main.ce21763f.css.map": "/ArgDashBoard/static/css/main.ce21763f.css.map",
-    "main.763ddfb1.js.map": "/ArgDashBoard/static/js/main.763ddfb1.js.map",
+    "main.72000031.css.map": "/ArgDashBoard/static/css/main.72000031.css.map",
+    "main.133c9a37.js.map": "/ArgDashBoard/static/js/main.133c9a37.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce21763f.css",
-    "static/js/main.763ddfb1.js"
+    "static/css/main.72000031.css",
+    "static/js/main.133c9a37.js"
   ]
 }
