@@ -3,64 +3,85 @@
 .Dash-clima {
   background: linear-gradient(45deg, #35838f, #a8d7dd);
   color: #fff;
-  text-align: center;
+  width: 50%;
 }
 
-/* ./componentes/ClimaHoy.js Estilos */
-/* Contenedor */
-.ClimaHoy-contenedor {
+.W-40 {
+ width: 40%;
+}
+
+/* Estilos de Datos Importantes */
+.Datos-importantes {
+  margin: 10px;
+}
+
+/* Estilos de Datos Varios */
+.Datos-varios {
+  margin: 10px;
+}
+
+/* Estilos de ./componentes/MinimaMaxima */
+.MinMax {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Displays */
+.Flex {
+  display: flex;
+}
+
+.Grid {
   display: grid;
 }
 
-.H1 {
-  color: #d9d9d9;
-}
-
-/* Contenedor de los datos */
-.ClimaHoy-Cont-Datos {
-  background: linear-gradient(45deg, #d18844, #f6dd87);
-  gap: 30px;
-  display: flex;
-  border-radius: 10px;
-}
-
-/* Contenedor de la escala de temperatura */
-.ClimaHoy-temp-escala {
-  display: grid;
-  color: #d9d9d9;
-  margin: 0 10px;
-  text-align: center;
-}
-
-/* Contenedor de la barra y hora */
-.ClimaHoy-temp-hora {
-  display: grid;
-}
-
-/* Contenedor de las barras */
-.ClimaHoy-temp-cont-barra {
-  display: flex;
-  align-items: end;
-  gap: 10px;
-  height: 135px;
-}
-
-.ClimaHoy-temp-barra {
-  background-color: #fff;
-  width: 20px;
-  height: 30px;
-  margin: 0 auto;
-}
-
-/* Contenedor de las horas */
-.ClimaHoy-temp-cont-hora-x {
-  display: flex;
-  align-items: end;
-  margin: 0;
+.Gap-10 {
   gap: 10px;
 }
 
-.ClimaHoy-temp-hora-x {
-  margin: 0 auto 10px;
+/* Estilos de las letras */
+.Letra-fff {
   color: #fff;
+}
+
+.Letra-gris {
+  color: gray;
+}
+
+.Letra-35 {
+  color: #35838f;
+}
+
+.Letra-t2 {
+  font-size: medium;
+}
+
+.Letra-t3 {
+  font-size: larger;
+}
+
+/* Estilos de los Background */
+.Back-Grad-Naranja {
+  background: linear-gradient(45deg, #d18844, #f6dd87);
+}
+
+.Back-Grad-NaranjaFuerte {
+  background: linear-gradient(45deg, #e05450, #f6dd87);
+}
+
+
+.Back-fff {
+  background-color: #fff;
+}
+
+/* Estilos de los border-radius */
+.Radius-5 {
+  border-radius: 5px;
+}
+
+.Radius-10 {
+  border-radius: 10px;
 }
