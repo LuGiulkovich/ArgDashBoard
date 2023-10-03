@@ -66,8 +66,8 @@ var mioptions = {
 
 export default function BarraClima() {
   return (
-    <div className="Back-Grad-Naranja Grid Radius-5">
-      <Bar data={midata} options={mioptions} />
+    <div className="Radius-5">
+      <Bar data={midata} options={mioptions}/>
     </div>
   );
 }

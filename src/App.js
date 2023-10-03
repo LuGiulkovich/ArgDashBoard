@@ -11,30 +11,28 @@ import { Visibilidad } from './componentes/Visibilidad';
 
 function App() {
   return (
-    <div className="Dash-clima Flex">
-      <div className='Datos-importantes Grid W-40'>
-        <p>Temperatura Actual</p>
-        <HoyDia />
-        <MinimaMaxima />
+    <div className="Dash-clima Grid">
+      <div className='Datos-importantes Flex Gap-10'>
+        <div className='Clima-Hoy Grid Gap-10'>
+          <HoyDia />
+          <MinimaMaxima />
+        </div>
+        <div className='Datos-Hoy Flex Gap-10'>
+            <div className='Grid Gap-10'>
+              <UvIndex />
+              <Visibilidad />
+              <AmaOca />
+            </div>
+            <div className='Grid Gap-10'>
+              <Humedad />
+              <EstadoViento />
+              
+              <CalidadAire />
+            </div>
+        </div>
       </div>
-      <div className='Datos-varios'>
-        <div className='Grid'>
-          <h1 className='Letra-fff'>Hoy</h1>
-          <BarraClima />
-        </div>
-        <h1 className='Letra-fff'>Reflejos</h1>
-        <div className='Grid Gap-10'>
-          <div className='Flex Gap-10'>
-            <UvIndex />
-            <EstadoViento />
-            <AmaOca />
-          </div>
-          <div className='Flex Gap-10'>
-            <Humedad />
-            <Visibilidad />
-            <CalidadAire />
-          </div>
-        </div>
+      <div className='Datos-barra'>
+        <BarraClima />
       </div>
     </div>
   );

@@ -1,25 +1,37 @@
 /* ----- Estilos para la parte del Clima ----- */
 /* App.js - Contenedor del Clima */
 .Dash-clima {
-  background: linear-gradient(45deg, #35838f, #a8d7dd);
+  background: linear-gradient(360deg, #7c73e6, #c4c1e0, #feeae3, #fafafa);
   color: #fff;
   width: 50%;
-}
-
-.W-40 {
- width: 40%;
+  
 }
 
 /* Estilos de Datos Importantes */
 .Datos-importantes {
   margin: 10px;
+  justify-content: space-around;
 }
 
-/* Estilos de Datos Varios */
-.Datos-varios {
+/* Estilos de la barra */
+.Datos-barra {
   margin: 10px;
 }
 
+/* Estilos de Datos Varios */
+.Clima-Hoy {
+  width: 50%;
+  align-items: center;
+}
+
+.Datos-Hoy {
+  justify-content: center;
+  width: 50%;
+}
+
+.HoyDia-Datos {
+  width: 50%;
+}
 /* Estilos de ./componentes/MinimaMaxima */
 .MinMax {
   width: 100%;
@@ -27,6 +39,7 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
+  text-align: center;
 }
 
 /* Displays */
@@ -42,6 +55,18 @@
   gap: 10px;
 }
 
+.Around {
+  justify-content: space-around;
+}
+
+.A-Center {
+  align-items: center;
+}
+
+.TA-Center {
+  text-align: center;
+}
+
 /* Estilos de las letras */
 .Letra-fff {
   color: #fff;
@@ -49,10 +74,12 @@
 
 .Letra-gris {
   color: gray;
+  margin: 5px;
 }
 
 .Letra-35 {
-  color: #35838f;
+  margin: 5px;
+  color: #430f59;
 }
 
 .Letra-t2 {
@@ -63,6 +90,10 @@
   font-size: larger;
 }
 
+.Letra-size {
+  font-size: 25px;
+}
+
 /* Estilos de los Background */
 .Back-Grad-Naranja {
   background: linear-gradient(45deg, #d18844, #f6dd87);
@@ -70,6 +101,14 @@
 
 .Back-Grad-NaranjaFuerte {
   background: linear-gradient(45deg, #e05450, #f6dd87);
+}
+
+.Back-42 {
+  background-color: #424477;
+}
+
+.Back-43 {
+  background-color: #430f59;
 }
 
 
@@ -84,4 +123,25 @@
 
 .Radius-10 {
   border-radius: 10px;
+}
+
+/* Border-color */
+.Border-red {
+  border: 3px solid red;
+}
+
+.Border-black {
+  border: 3px solid black;
+}
+
+.Border-blue {
+  border: 3px solid blue;
+}
+
+.Border-green {
+  border: 3px solid green;
+}
+
+.Border-43 {
+  border: 3px solid #430f59;
 }
