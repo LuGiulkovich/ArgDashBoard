@@ -5,7 +5,7 @@ import atardercer from '../iconos/sunset.svg';
 export const AmaOca = () => {
   return (
     <div className='Back-fff Radius-10'>
-      <p className='Letra-gris'>Amanecer y Ocaso</p>
+      <p className='Letra-gris'>Amanecer y Atardecer</p>
       <div className='Grid'>
         <div className='Flex'>
           <img src={amanecer} alt='Amanecer' width={'50px'} />

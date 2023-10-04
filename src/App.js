@@ -8,13 +8,21 @@ import { Humedad } from './componentes/Humedad';
 import { MinimaMaxima } from './componentes/MinimaMaxima';
 import { UvIndex } from './componentes/UvIndex';
 import { Visibilidad } from './componentes/Visibilidad';
+import json from './Json/practico1.json';
 
 function App() {
+
+  const hoyTemperatura = json.current_weather.temperature;
+  const velocidadViento = json.current_weather.windspeed;
+  const ddMmFfHh = json.current_weather.time;
+
   return (
     <div className="Dash-clima Grid">
       <div className='Datos-importantes Flex Gap-10'>
         <div className='Clima-Hoy Grid Gap-10'>
-          <HoyDia />
+          <HoyDia siHoyTemperatura={hoyTemperatura}
+            siDdMmFfHh={ddMmFfHh}
+          />
           <MinimaMaxima />
         </div>
         <div className='Datos-Hoy Flex Gap-10'>
@@ -25,8 +33,7 @@ function App() {
             </div>
             <div className='Grid Gap-10'>
               <Humedad />
-              <EstadoViento />
-              
+              <EstadoViento  siVelocidad={velocidadViento}/>
               <CalidadAire />
             </div>
         </div>

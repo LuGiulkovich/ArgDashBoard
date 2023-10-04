@@ -101,6 +101,7 @@
 
 .Back-Grad-NaranjaFuerte {
   background: linear-gradient(45deg, #e05450, #f6dd87);
+  transition: box-shadow 1s ease;
 }
 
 .Back-42 {
@@ -114,6 +115,17 @@
 
 .Back-fff {
   background-color: #fff;
+  transition: box-shadow 1s ease;
+}
+
+.Back-Grad-NaranjaFuerte:hover {
+  box-shadow: 0.1rem 0.5rem 0.5rem #430f59;
+  cursor: pointer;
+}
+
+.Back-fff:hover {
+  box-shadow: 0.1rem 0.5rem 0.5rem #430f59;
+  cursor: pointer;
 }
 
 /* Estilos de los border-radius */
