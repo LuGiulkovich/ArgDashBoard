@@ -2,7 +2,7 @@ import React from 'react'
 import nublado from '../iconos/partly-cloudy-day.svg';
 import celsius from '../iconos/thermometer-celsius.svg';
 
-export const HoyDia = ({siHoyTemperatura, siDdMmFfHh}) => {
+export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy}) => {
 
     const datosDeHoy = siDdMmFfHh.split("T");
     let nombreMes = '';
@@ -57,15 +57,12 @@ export const HoyDia = ({siHoyTemperatura, siDdMmFfHh}) => {
     separarDatos();
 
     return (
-        <div className='HoyDia Back-Grad-NaranjaFuerte Radius-10 Flex'>
-            <img src={nublado} alt='Nublado' width={"200px"} className=''/>
+        <div className='Back-Grad-NaranjaFuerte Radius-10 Flex'>
+            <img src={nublado} alt='Nublado' width={"140vw"}/>
             <div className='HoyDia-Datos Grid'>
-                <p className='Letra-size'>Nublado</p>
-                <div className='Flex Around A-Center'>
-                    <p className='Letra-size Letra-t3'>{siHoyTemperatura}</p>
-                    <img src={celsius} alt='Celsius'  width={'100px'}/>
-                </div>
-                <p className='Letra-size'>{fechaDeHoy}</p>
+                <h3>Nublado</h3>
+                <h3>{siHoyTemperatura}{siUniHoy}</h3>
+                <h4>{fechaDeHoy}</h4>
             </div>
             
         </div>

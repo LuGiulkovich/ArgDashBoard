@@ -3,52 +3,62 @@
 .Dash-clima {
   background: linear-gradient(360deg, #7c73e6, #c4c1e0, #feeae3, #fafafa);
   color: #fff;
-  width: 50%;
-  
+  width: 50vw;
+  height: 100vh;
+  justify-content: center;
 }
 
 /* Estilos de Datos Importantes */
 .Datos-importantes {
-  margin: 10px;
+  margin: 2vh;
+  height: 50vh;
   justify-content: space-around;
 }
 
 /* Estilos de la barra */
 .Datos-barra {
-  margin: 10px;
+  margin: 1vh;
+  width: 43vw;
 }
 
 /* Estilos de Datos Varios */
 .Clima-Hoy {
-  width: 50%;
+  width: 23vw;
+  height: 52vh;
   align-items: center;
 }
 
 .Datos-Hoy {
-  justify-content: center;
-  width: 50%;
-}
-
-.HoyDia-Datos {
-  width: 50%;
+  justify-content: space-around;
+  width: 25vw;
+  height: 52vh;
 }
 
 /* Estilos de ./componentes/MinimaMaxima.js */
 .MinMax {
-  width: 100%;
-  height: 80%;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 1vw;
   text-align: center;
 }
 
 /* Estilos para ./componentes/UvIndex.js/GaugeChart.js */
 .UvIndex-Gauge {
   margin: 0 auto;
-  width: 80%;
+  width: 15vh;
 }
 
+/* Estilos para ./componentes/HoyDia.js */
+.HoyDia-Datos {
+  width: 12vw;
+  text-align: center;
+}
+
+/* Estilos de Contenidos */
+.Contenidos {
+  width: 20vw;
+  gap: 1vh;
+}
 
 /* Displays */
 .Flex {
@@ -60,11 +70,15 @@
 }
 
 .Gap-10 {
-  gap: 10px;
+  gap: 1vw;
 }
 
 .Around {
   justify-content: space-around;
+}
+
+.Between {
+  justify-content: space-between;
 }
 
 .A-Center {
@@ -82,12 +96,14 @@
 
 .Letra-gris {
   color: gray;
-  margin: 5px;
+  margin: 1vh;
+  font-size: 2vh;
 }
 
 .Letra-35 {
-  margin: 5px;
+  margin: 1vh;
   color: #430f59;
+  font-size: 3vh;
 }
 
 .Letra-t2 {

@@ -46,6 +46,7 @@ var midata = {
       label: "Temperatura",
       data: temperatura,
       backgroundColor: "#fff",
+      borderRadius: 50,
     },
   ],
 };
@@ -66,8 +67,8 @@ var mioptions = {
 
 export default function BarraClima() {
   return (
-    <div className="Radius-5">
+    <div>
       <Bar data={midata} options={mioptions}/>
-    </div>
+    </div>    
   );
 }
