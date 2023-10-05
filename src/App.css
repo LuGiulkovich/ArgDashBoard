@@ -1,7 +1,8 @@
 /* ----- Estilos para la parte del Clima ----- */
 /* App.js - Contenedor del Clima */
 .Dash-clima {
-  background: linear-gradient(360deg, #7c73e6, #c4c1e0, #feeae3, #fafafa);
+  background-image: url(../src/assets/1366_2000.jpg);
+  background-color: linear-gradient(360deg, #7c73e6, #c4c1e0, #feeae3, #fafafa, 0.5);
   color: #fff;
   width: 50vw;
   height: 100vh;
@@ -126,6 +127,7 @@
 .Back-Grad-NaranjaFuerte {
   background: linear-gradient(45deg, #e05450, #f6dd87);
   transition: box-shadow 1s ease;
+  opacity: .9;
 }
 
 .Back-42 {
@@ -139,17 +141,20 @@
 
 .Back-fff {
   background-color: #fff;
+  opacity: 0.9;
   transition: box-shadow 1s ease;
 }
 
 .Back-Grad-NaranjaFuerte:hover {
   box-shadow: 0.1rem 0.5rem 0.5rem #430f59;
   cursor: pointer;
+  opacity: 1;
 }
 
 .Back-fff:hover {
   box-shadow: 0.1rem 0.5rem 0.5rem #430f59;
   cursor: pointer;
+  opacity: 1;
 }
 
 /* Estilos de los border-radius */
