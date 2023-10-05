@@ -32,7 +32,8 @@
 .HoyDia-Datos {
   width: 50%;
 }
-/* Estilos de ./componentes/MinimaMaxima */
+
+/* Estilos de ./componentes/MinimaMaxima.js */
 .MinMax {
   width: 100%;
   height: 80%;
@@ -41,6 +42,13 @@
   gap: 50px;
   text-align: center;
 }
+
+/* Estilos para ./componentes/UvIndex.js/GaugeChart.js */
+.UvIndex-Gauge {
+  margin: 0 auto;
+  width: 80%;
+}
+
 
 /* Displays */
 .Flex {
