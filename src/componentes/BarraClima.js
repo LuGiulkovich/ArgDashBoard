@@ -22,53 +22,57 @@ ChartJS.register(
   Filler
 );
 
-// para ver como se comporta el grafico de linea le tengo que pasar los datos
-var temperatura = [18, 15, 18, 21, 30, 25, 20, 18, 15];
-var hora = [
-  "12:00 AM",
-  "3:00 AM",
-  "6:00 AM",
-  "9:00 AM",
-  "12:00 PM",
-  "3:00 PM",
-  "6:00 PM",
-  "9:00 PM",
-  "12:00 AM",
-];
 
-// data: como se muestra mi grafica
-var midata = {
-  labels: hora,
-  // datasets es un array
-  datasets: [
-    //cada una de las lineas del grafico
-    {
-      label: "Temperatura",
-      data: temperatura,
-      backgroundColor: "#fff",
-      borderRadius: 50,
-    },
-  ],
-};
 
-// option: como funciona mi grafica
-var mioptions = {
-  responsive: true,
-  scales: {
-    y: {
-      min: 0,
-      max: 40,
-    },
-    x: {
-      ticks: { color: "#fff" },
-    },
-  },
-};
+export default function BarraClima({ siHorarios, siTemperatura }) {
 
-export default function BarraClima() {
+  const hora = siHorarios;
+  let dia;
+  let horas = [];
+
+  // para ver como se comporta el grafico de linea le tengo que pasar los datos
+  const temperatura = siTemperatura;
+
+  function separarDatos (elemento) {
+    dia = elemento.slice(11, 16);
+    console.log(dia);
+    horas.push(dia);
+  }
+
+  hora.forEach(separarDatos);
+
+  // data: como se muestra mi grafica
+  var midata = {
+    labels: horas,
+    // datasets es un array
+    datasets: [
+      //cada una de las lineas del grafico
+      {
+        label: "Temperatura",
+        data: temperatura,
+        backgroundColor: "#fff",
+        borderRadius: 50,
+      },
+    ],
+  };
+
+  // option: como funciona mi grafica
+  var mioptions = {
+    responsive: true,
+    scales: {
+      y: {
+        min: 0,
+        max: 35,
+      },
+      x: {
+        ticks: { color: "#fff" },
+      },
+    },
+  };
+
   return (
     <div>
-      <Bar data={midata} options={mioptions}/>
-    </div>    
+      <Bar data={midata} options={mioptions} />
+    </div>
   );
 }

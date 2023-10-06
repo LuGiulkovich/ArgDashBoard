@@ -13,9 +13,9 @@ ChartJS.register (
     Legend
 );
 
-export const GaugeChart = () => {
+export const GaugeChart = ({siUvIndexMax}) => {
 
-    const uvIndex = 6;
+    const uvIndex = siUvIndexMax;
 
     const data = {
         labels: ['Uv'],
@@ -46,7 +46,7 @@ export const GaugeChart = () => {
             ctx.font = 'bold 30px sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'baseline';
-            ctx.fillText(uvIndex, xCenter, yCenter)
+            ctx.fillText(siUvIndexMax, xCenter, yCenter)
         }
     }
 

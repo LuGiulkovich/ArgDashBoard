@@ -18,7 +18,7 @@
 
 /* Estilos de la barra */
 .Datos-barra {
-  margin: 1vh;
+  margin: 1vh auto;
   width: 43vw;
 }
 

@@ -1,8 +1,7 @@
 import React from 'react'
 import nublado from '../iconos/partly-cloudy-day.svg';
-import celsius from '../iconos/thermometer-celsius.svg';
 
-export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy}) => {
+export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy, siCodigoClimaHoy}) => {
 
     const datosDeHoy = siDdMmFfHh.split("T");
     let nombreMes = '';
@@ -60,7 +59,7 @@ export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy}) => {
         <div className='Back-Grad-NaranjaFuerte Radius-10 Flex'>
             <img src={nublado} alt='Nublado' width={"140vw"}/>
             <div className='HoyDia-Datos Grid'>
-                <h3>Nublado</h3>
+                <h3>{siCodigoClimaHoy}</h3>
                 <h3>{siHoyTemperatura}{siUniHoy}</h3>
                 <h4>{fechaDeHoy}</h4>
             </div>

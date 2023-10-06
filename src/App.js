@@ -9,7 +9,7 @@ import { Localidad } from './componentes/Localidad';
 import { MinimaMaxima } from './componentes/MinimaMaxima';
 import { UvIndex } from './componentes/UvIndex';
 import { Visibilidad } from './componentes/Visibilidad';
-import json from './Json/practico1.json';
+import json from './Json/api.json';
 
 function App() {
 
@@ -17,18 +17,32 @@ function App() {
   const hoyTemperatura = json.current_weather.temperature;
   const ddMmFfHh = json.current_weather.time;
   const unidadHoy = json.hourly_units.temperature_2m;
+  const codigoClimaHoy = json.current_weather.weathercode;
 
   /* EstadoViento.js */
   const velocidadViento = json.current_weather.windspeed;
   const direccionViento = json.current_weather.winddirection;
-  const unidadVelViento = json.hourly_units.windspeed_10m;
+  const unidadVelViento = json.daily_units.windspeed_10m_max;
 
   /* MinimaMaxima.js */
   const unidadMin = json.daily_units.temperature_2m_min;
   const unidadMax = json.daily_units.temperature_2m_max;
+  const minima = json.daily.temperature_2m_min;
+  const maxima = json.daily.temperature_2m_max;
 
   /* Localidad.js */
   const localidad = json.timezone;
+
+  /* UvIndex.js */
+  const uvMax = json.daily.uv_index_max;
+
+  /* AmaOca.js */
+  const amanecer = json.daily.sunrise;
+  const atardecer = json.daily.sunset;
+
+  /* BarraClima.js */
+  const horarios = json.hourly.time;
+  const temperatura = json.hourly.temperature_2m;
 
   return (
     <div className="Dash-clima Grid">
@@ -37,20 +51,25 @@ function App() {
           <HoyDia siHoyTemperatura={hoyTemperatura}
             siDdMmFfHh={ddMmFfHh}
             siUniHoy={unidadHoy}
+            siCodigoClimaHoy={codigoClimaHoy}
           />
           <Localidad siLocalidad={localidad}/>
           <MinimaMaxima siUniMin={unidadMin}
             siUniMax={unidadMax}
+            siMin={minima}
+            siMax={maxima}
           />
         </div>
         <div className='Datos-Hoy Flex Gap-10'>
           <div className='Contenidos Grid '>
-            <UvIndex />
+            <UvIndex siUvIndexMax={uvMax}/>
             <Visibilidad />
             <Humedad />
           </div>
           <div className='Contenidos Grid'>
-            <AmaOca />
+            <AmaOca siAmanecer={amanecer}
+              siAtardecer={atardecer}
+            />
             <EstadoViento siVelocidad={velocidadViento}
               siDireccion={direccionViento}
               siUnidadVelViento={unidadVelViento}
@@ -60,7 +79,9 @@ function App() {
         </div>
       </div>
       <div className='Datos-barra'>
-        <BarraClima />
+        <BarraClima siHorarios={horarios}
+          siTemperatura={temperatura}
+        />
       </div>
     </div>
   );
