@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/ArgDashBoard/static/css/main.553c20ce.css",
-    "main.js": "/ArgDashBoard/static/js/main.0a2effc5.js",
+    "main.css": "/ArgDashBoard/static/css/main.7619b1fd.css",
+    "main.js": "/ArgDashBoard/static/js/main.a6b1a8ca.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
     "static/media/1366_2000.jpg": "/ArgDashBoard/static/media/1366_2000.ccbefc7ca2215e427e84.jpg",
-    "static/media/partly-cloudy-day.svg": "/ArgDashBoard/static/media/partly-cloudy-day.22af82f41162d6ba6559909abad9e54d.svg",
     "static/media/sunrise.svg": "/ArgDashBoard/static/media/sunrise.7bd9ac1ef5536646bd0fe926afdfb495.svg",
     "static/media/sunset.svg": "/ArgDashBoard/static/media/sunset.6251769d5f3fd2b94bfa2571a1c12695.svg",
     "static/media/moon-last-quarter.svg": "/ArgDashBoard/static/media/moon-last-quarter.2b5f1eafb20573402876f09889fdc1dd.svg",
     "index.html": "/ArgDashBoard/index.html",
-    "main.553c20ce.css.map": "/ArgDashBoard/static/css/main.553c20ce.css.map",
-    "main.0a2effc5.js.map": "/ArgDashBoard/static/js/main.0a2effc5.js.map",
+    "main.7619b1fd.css.map": "/ArgDashBoard/static/css/main.7619b1fd.css.map",
+    "main.a6b1a8ca.js.map": "/ArgDashBoard/static/js/main.a6b1a8ca.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.553c20ce.css",
-    "static/js/main.0a2effc5.js"
+    "static/css/main.7619b1fd.css",
+    "static/js/main.a6b1a8ca.js"
   ]
 }
