@@ -10,14 +10,17 @@ import { MinimaMaxima } from './componentes/MinimaMaxima';
 import { UvIndex } from './componentes/UvIndex';
 import { Visibilidad } from './componentes/Visibilidad';
 import json from './Json/api.json';
+import codigoClima from './Json/CodigoClima.json';
 
 function App() {
-
   /* HoyDia.js */
   const hoyTemperatura = json.current_weather.temperature;
   const ddMmFfHh = json.current_weather.time;
   const unidadHoy = json.hourly_units.temperature_2m;
   const codigoClimaHoy = json.current_weather.weathercode;
+    /* Obtener el clima de hoy */
+  const comoEstaHoy = (codigoClima[codigoClimaHoy].name);
+  const climaIcono = (codigoClima[codigoClimaHoy].image_src);
 
   /* EstadoViento.js */
   const velocidadViento = json.current_weather.windspeed;
@@ -51,7 +54,8 @@ function App() {
           <HoyDia siHoyTemperatura={hoyTemperatura}
             siDdMmFfHh={ddMmFfHh}
             siUniHoy={unidadHoy}
-            siCodigoClimaHoy={codigoClimaHoy}
+            siComoEstaHoy={comoEstaHoy}
+            siClimaIcono={climaIcono}
           />
           <Localidad siLocalidad={localidad}/>
           <MinimaMaxima siUniMin={unidadMin}

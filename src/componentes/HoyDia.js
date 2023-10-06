@@ -1,15 +1,12 @@
 import React from 'react'
-import nublado from '../iconos/partly-cloudy-day.svg';
 
-export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy, siCodigoClimaHoy}) => {
+export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy, siComoEstaHoy, siClimaIcono}) => {
 
     const datosDeHoy = siDdMmFfHh.split("T");
     let nombreMes = '';
     let fechaDeHoy = '';
     const separarDatos = () => {
-        console.log(datosDeHoy);
         let dMA = datosDeHoy[0].split("-");
-        console.log(dMA);
 
         switch (dMA[1]) {
             case '1':
@@ -50,16 +47,14 @@ export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy, siCodigoClimaHoy
             break;
         }
         fechaDeHoy = nombreMes + " " + dMA[2] + ", " + dMA[0];
-        console.log(nombreMes);
-        console.log(fechaDeHoy);
     }
     separarDatos();
 
     return (
         <div className='Back-Grad-NaranjaFuerte Radius-10 Flex'>
-            <img src={nublado} alt='Nublado' width={"140vw"}/>
+            <img src={siClimaIcono} alt='Nublado' width={"140vw"}/>
             <div className='HoyDia-Datos Grid'>
-                <h3>{siCodigoClimaHoy}</h3>
+                <h3>{siComoEstaHoy}</h3>
                 <h3>{siHoyTemperatura}{siUniHoy}</h3>
                 <h4>{fechaDeHoy}</h4>
             </div>

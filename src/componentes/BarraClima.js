@@ -35,7 +35,6 @@ export default function BarraClima({ siHorarios, siTemperatura }) {
 
   function separarDatos (elemento) {
     dia = elemento.slice(11, 16);
-    console.log(dia);
     horas.push(dia);
   }
 

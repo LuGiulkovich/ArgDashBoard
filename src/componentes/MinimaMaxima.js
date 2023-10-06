@@ -1,15 +1,17 @@
 import React from 'react'
-import sol from '../iconos/partly-cloudy-day.svg';
 import luna from '../iconos/moon-last-quarter.svg';
 
 export const MinimaMaxima = ({siUniMin, siUniMax, siMin, siMax}) => {
+
+    const soleado = 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg';
+
     return (
         <div className='MinMax Back-Grad-NaranjaFuerte Radius-10 Flex'>
             <div className='Grid'>
                 <p>{siMax}{siUniMax}</p>
                 <div className='Flex'>
                     <p>MAXIMA</p>
-                    <img src={sol} alt='Sol' width={'50px'} />
+                    <img src={soleado} alt='Sol' width={'50px'} />
                 </div>
             </div>
             <div className='Grid'>

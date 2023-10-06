@@ -10,10 +10,6 @@ export const AmaOca = ({ siAmanecer, siAtardecer }) => {
   let sunset = '';
 
   const separarDatos = () => {
-
-    console.log(amanecer);
-    console.log(atardecer);
-
     sunrise = amanecer[1];
     sunset = atardecer[1];
 
