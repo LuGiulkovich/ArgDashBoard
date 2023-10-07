@@ -1,11 +1,17 @@
 import React from 'react'
+import humedadIcon from '../iconos/humidity.svg';
 
-export const Humedad = () => {
+export const Humedad = ({siUniHumedad, siHumedad}) => {
+
+  const pseudoHumedad = siHumedad[0];
+
   return (
-    <div className='Back-fff Radius-10'>
-        <p className='Letra-gris'>Humedad</p>
-        <h1 className='Letra-35'>12<span>%</span></h1>
-        <p className='Letra-35'>Normal</p>
+    <div className='Back-fff Radius-10 Flex Around'>  
+        <div className='Grid'>
+          <p className='Letra-gris p-Humedad'>Humedad</p>
+          <h1 className='Letra-35'>{pseudoHumedad}<span>{siUniHumedad}</span></h1>
+        </div>
+        <img src={humedadIcon}  alt='Humedad Icono' width={'100px'}/>
     </div>
   )
 }

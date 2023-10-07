@@ -24,7 +24,7 @@ ChartJS.register(
 
 
 
-export default function BarraClima({ siHorarios, siTemperatura }) {
+export default function BarraClima({ siHorarios, siTemperatura, siMaxima }) {
 
   const hora = siHorarios;
   let dia;
@@ -48,20 +48,27 @@ export default function BarraClima({ siHorarios, siTemperatura }) {
       //cada una de las lineas del grafico
       {
         label: "Temperatura",
-        data: temperatura,
-        backgroundColor: "#fff",
+        backgroundColor: "rgba(255, 255, 255, 0.5)",
+        borderColor: "#b300ff",
+        borderWidth: 1,
+        hoverBackgroundColor: "#fff",
         borderRadius: 50,
+        hoverBorderColor: "#ff7b00",
+        data: temperatura,
       },
     ],
   };
 
   // option: como funciona mi grafica
   var mioptions = {
+    //maintainAspectRatio: false; me deja cambiarle el tamaño
+    maintainAspectRatio: false,
     responsive: true,
     scales: {
       y: {
         min: 0,
-        max: 35,
+        max: siMaxima,
+        ticks: { color: "#fff" },
       },
       x: {
         ticks: { color: "#fff" },
@@ -70,7 +77,7 @@ export default function BarraClima({ siHorarios, siTemperatura }) {
   };
 
   return (
-    <div>
+    <div className="TamañoBarra">
       <Bar data={midata} options={mioptions} />
     </div>
   );

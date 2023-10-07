@@ -1,7 +1,6 @@
 import './App.css';
 import { AmaOca } from './componentes/AmaOca';
 import BarraClima from './componentes/BarraClima';
-import { CalidadAire } from './componentes/CalidadAire';
 import { EstadoViento } from './componentes/EstadoViento';
 import { HoyDia } from './componentes/HoyDia';
 import { Humedad } from './componentes/Humedad';
@@ -9,8 +8,9 @@ import { Localidad } from './componentes/Localidad';
 import { MinimaMaxima } from './componentes/MinimaMaxima';
 import { UvIndex } from './componentes/UvIndex';
 import { Visibilidad } from './componentes/Visibilidad';
-import json from './Json/api.json';
+import json from './Json/primerGet.json';
 import codigoClima from './Json/CodigoClima.json';
+import { Precipitacion } from './componentes/Precipitacion';
 
 function App() {
   /* HoyDia.js */
@@ -26,6 +26,7 @@ function App() {
   const velocidadViento = json.current_weather.windspeed;
   const direccionViento = json.current_weather.winddirection;
   const unidadVelViento = json.daily_units.windspeed_10m_max;
+  const unidadDirViento = json.hourly_units.winddirection_80m;
 
   /* MinimaMaxima.js */
   const unidadMin = json.daily_units.temperature_2m_min;
@@ -46,6 +47,17 @@ function App() {
   /* BarraClima.js */
   const horarios = json.hourly.time;
   const temperatura = json.hourly.temperature_2m;
+  const humedadHoraria = json.hourly.relativehumidity_2m;
+
+  /* Humedad.js */
+  const uniHumedad = json.hourly_units.relativehumidity_2m;
+  const humedad = json.hourly.relativehumidity_2m;
+
+  /* Visibilidad.js */
+  const uniVisibilidad = json.hourly_units.visibility;
+
+  /* Precipitacion.js */
+  const probabilidadPre = json.daily.precipitation_probability_max;
 
   return (
     <div className="Dash-clima Grid">
@@ -67,8 +79,10 @@ function App() {
         <div className='Datos-Hoy Flex Gap-10'>
           <div className='Contenidos Grid '>
             <UvIndex siUvIndexMax={uvMax}/>
-            <Visibilidad />
-            <Humedad />
+            <Visibilidad siUniVisibilidad={uniVisibilidad}/>
+            <Humedad siUniHumedad={uniHumedad}
+              siHumedad={humedad}
+            />
           </div>
           <div className='Contenidos Grid'>
             <AmaOca siAmanecer={amanecer}
@@ -77,14 +91,17 @@ function App() {
             <EstadoViento siVelocidad={velocidadViento}
               siDireccion={direccionViento}
               siUnidadVelViento={unidadVelViento}
+              siUnidadDirViento={unidadDirViento}
             />
-            <CalidadAire />
+            <Precipitacion siProbabilidadPre={probabilidadPre}/>
           </div>
         </div>
       </div>
       <div className='Datos-barra'>
         <BarraClima siHorarios={horarios}
           siTemperatura={temperatura}
+          siHumedad={humedadHoraria}
+          siMaxima={maxima}
         />
       </div>
     </div>

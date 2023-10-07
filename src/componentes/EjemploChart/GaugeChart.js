@@ -43,7 +43,7 @@ export const GaugeChart = ({siUvIndexMax}) => {
 
             ctx.save();
             ctx.fillStyle = '#430f59';
-            ctx.font = 'bold 30px sans-serif';
+            ctx.font = 'bold 20px sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'baseline';
             ctx.fillText(siUvIndexMax, xCenter, yCenter)
