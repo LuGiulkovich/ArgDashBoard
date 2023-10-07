@@ -18,12 +18,13 @@
 
 /* Estilos de la barra */
 .Datos-barra {
-  margin: 0 auto;
-  width: 48vw;
+  margin: 0 auto 1vh;
+  width: 49vw;
+  border-radius: 1vw;
 }
 
 .TamañoBarra {
-  height: 40vh;
+  height: 30vh;
 }
 
 /* Estilos de Datos Varios */

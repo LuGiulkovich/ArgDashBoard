@@ -51,6 +51,7 @@ export default function BarraClima({ siHorarios, siTemperatura, siMaxima }) {
         backgroundColor: "rgba(255, 255, 255, 0.5)",
         borderColor: "#b300ff",
         borderWidth: 1,
+        barPercentage: 0.25,
         hoverBackgroundColor: "#fff",
         borderRadius: 50,
         hoverBorderColor: "#ff7b00",
@@ -68,16 +69,24 @@ export default function BarraClima({ siHorarios, siTemperatura, siMaxima }) {
       y: {
         min: 0,
         max: siMaxima,
-        ticks: { color: "#fff" },
+        ticks: { 
+          color: "#fff",
+        },
       },
       x: {
         ticks: { color: "#fff" },
       },
     },
+    plugins: {
+      legend: {
+        display: false // Establece display en false para ocultar las leyendas
+      },
+    },
   };
 
   return (
-    <div className="TamañoBarra">
+    <div className="TamañoBarra TA-Center">
+      <p className="Letra-fff">Temperatura para Hoy</p>
       <Bar data={midata} options={mioptions} />
     </div>
   );

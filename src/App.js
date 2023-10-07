@@ -97,7 +97,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='Datos-barra'>
+      <div className='Datos-barra Back-Grad-NaranjaFuerte'>
         <BarraClima siHorarios={horarios}
           siTemperatura={temperatura}
           siHumedad={humedadHoraria}
