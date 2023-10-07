@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/ArgDashBoard/static/css/main.fffd871d.css",
-    "main.js": "/ArgDashBoard/static/js/main.b78f074b.js",
+    "main.css": "/ArgDashBoard/static/css/main.d16e8329.css",
+    "main.js": "/ArgDashBoard/static/js/main.ed7ea2da.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
     "static/media/1366_2000.jpg": "/ArgDashBoard/static/media/1366_2000.ccbefc7ca2215e427e84.jpg",
     "static/media/humidity.svg": "/ArgDashBoard/static/media/humidity.764c599eb3217ae1e79e62a0310dc95a.svg",
-    "static/media/raindrops.svg": "/ArgDashBoard/static/media/raindrops.a866778cc0b45e26b7ad6887f6838f66.svg",
     "static/media/sunrise.svg": "/ArgDashBoard/static/media/sunrise.7bd9ac1ef5536646bd0fe926afdfb495.svg",
     "static/media/sunset.svg": "/ArgDashBoard/static/media/sunset.6251769d5f3fd2b94bfa2571a1c12695.svg",
     "static/media/pressure-high.svg": "/ArgDashBoard/static/media/pressure-high.74c3eb4ad723a16b3807a04afbb964fb.svg",
     "static/media/pressure-low.svg": "/ArgDashBoard/static/media/pressure-low.86dd429911b42f08b554111a7a673bf0.svg",
     "index.html": "/ArgDashBoard/index.html",
-    "main.fffd871d.css.map": "/ArgDashBoard/static/css/main.fffd871d.css.map",
-    "main.b78f074b.js.map": "/ArgDashBoard/static/js/main.b78f074b.js.map",
+    "main.d16e8329.css.map": "/ArgDashBoard/static/css/main.d16e8329.css.map",
+    "main.ed7ea2da.js.map": "/ArgDashBoard/static/js/main.ed7ea2da.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fffd871d.css",
-    "static/js/main.b78f074b.js"
+    "static/css/main.d16e8329.css",
+    "static/js/main.ed7ea2da.js"
   ]
 }
