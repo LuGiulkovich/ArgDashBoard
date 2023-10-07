@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/ArgDashBoard/static/css/main.7619b1fd.css",
-    "main.js": "/ArgDashBoard/static/js/main.a6b1a8ca.js",
+    "main.css": "/ArgDashBoard/static/css/main.dc63f46a.css",
+    "main.js": "/ArgDashBoard/static/js/main.99f8d753.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
     "static/media/1366_2000.jpg": "/ArgDashBoard/static/media/1366_2000.ccbefc7ca2215e427e84.jpg",
+    "static/media/humidity.svg": "/ArgDashBoard/static/media/humidity.764c599eb3217ae1e79e62a0310dc95a.svg",
+    "static/media/raindrops.svg": "/ArgDashBoard/static/media/raindrops.a866778cc0b45e26b7ad6887f6838f66.svg",
     "static/media/sunrise.svg": "/ArgDashBoard/static/media/sunrise.7bd9ac1ef5536646bd0fe926afdfb495.svg",
     "static/media/sunset.svg": "/ArgDashBoard/static/media/sunset.6251769d5f3fd2b94bfa2571a1c12695.svg",
-    "static/media/moon-last-quarter.svg": "/ArgDashBoard/static/media/moon-last-quarter.2b5f1eafb20573402876f09889fdc1dd.svg",
+    "static/media/pressure-high.svg": "/ArgDashBoard/static/media/pressure-high.74c3eb4ad723a16b3807a04afbb964fb.svg",
+    "static/media/pressure-low.svg": "/ArgDashBoard/static/media/pressure-low.86dd429911b42f08b554111a7a673bf0.svg",
     "index.html": "/ArgDashBoard/index.html",
-    "main.7619b1fd.css.map": "/ArgDashBoard/static/css/main.7619b1fd.css.map",
-    "main.a6b1a8ca.js.map": "/ArgDashBoard/static/js/main.a6b1a8ca.js.map",
+    "main.dc63f46a.css.map": "/ArgDashBoard/static/css/main.dc63f46a.css.map",
+    "main.99f8d753.js.map": "/ArgDashBoard/static/js/main.99f8d753.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7619b1fd.css",
-    "static/js/main.a6b1a8ca.js"
+    "static/css/main.dc63f46a.css",
+    "static/js/main.99f8d753.js"
   ]
 }
