@@ -11,7 +11,7 @@ export const Humedad = ({siUniHumedad, siHumedad}) => {
           <p className='Letra-gris p-Humedad'>Humedad</p>
           <h1 className='Letra-35'>{pseudoHumedad}<span>{siUniHumedad}</span></h1>
         </div>
-        <img src={humedadIcon}  alt='Humedad Icono' width={'100px'}/>
+        <img src={humedadIcon}  alt='Humedad Icono' width={'101px'}/>
     </div>
   )
 }

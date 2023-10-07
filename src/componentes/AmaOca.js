@@ -23,11 +23,11 @@ export const AmaOca = ({ siAmanecer, siAtardecer }) => {
       <p className='Letra-gris'>Amanecer y Atardecer</p>
       <div className='Grid'>
         <div className='Flex'>
-          <img src={amanecerIcon} alt='Amanecer' width={'50px'} />
+          <img src={amanecerIcon} alt='Amanecer' width={'45px'} />
           <p className='Letra-35 Letra-t3'>{sunrise} AM</p>
         </div>
         <div className='Flex'>
-          <img src={atardercerIcon} alt='Atardecer' width={'50px'} />
+          <img src={atardercerIcon} alt='Atardecer' width={'45px'} />
           <p className='Letra-35 Letra-t3'>{sunset} PM</p>
         </div>
       </div>

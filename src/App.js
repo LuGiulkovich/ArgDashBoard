@@ -1,7 +1,7 @@
 import './App.css';
 import { AmaOca } from './componentes/AmaOca';
 import BarraClima from './componentes/BarraClima';
-import { EstadoViento } from './componentes/EstadoViento';
+import { VelocidadViento } from './componentes/VelocidadViento';
 import { HoyDia } from './componentes/HoyDia';
 import { Humedad } from './componentes/Humedad';
 import { Localidad } from './componentes/Localidad';
@@ -10,7 +10,9 @@ import { UvIndex } from './componentes/UvIndex';
 import { Visibilidad } from './componentes/Visibilidad';
 import json from './Json/primerGet.json';
 import codigoClima from './Json/CodigoClima.json';
-import { Precipitacion } from './componentes/Precipitacion';
+import calidadAire from './Json/CalidadAire.json';
+//import { Precipitacion } from './componentes/Precipitacion';
+import { EstadoViento } from './componentes/EstadoViento';
 
 function App() {
   /* HoyDia.js */
@@ -55,12 +57,27 @@ function App() {
 
   /* Visibilidad.js */
   const uniVisibilidad = json.hourly_units.visibility;
+  const visibilidad = json.hourly.visibility[0];
 
   /* Precipitacion.js */
   const probabilidadPre = json.daily.precipitation_probability_max;
 
+  /* EstadoViento.js */
+  const uniAire = calidadAire.hourly_units.pm10;
+  const aire = calidadAire.hourly.pm10[0];
+
+  //<Precipitacion siProbabilidadPre={probabilidadPre}/>
+
   return (
     <div className="Dash-clima Grid">
+      
+      <div className='Datos-barra Back-Grad-NaranjaFuerte'>
+        <BarraClima siHorarios={horarios}
+          siTemperatura={temperatura}
+          siHumedad={humedadHoraria}
+          siMaxima={maxima}
+        />
+      </div>
       <div className='Datos-importantes Flex Gap-10'>
         <div className='Clima-Hoy Grid Gap-10'>
           <HoyDia siHoyTemperatura={hoyTemperatura}
@@ -77,32 +94,30 @@ function App() {
           />
         </div>
         <div className='Datos-Hoy Flex Gap-10'>
-          <div className='Contenidos Grid '>
+          <div className='Contenidos Grid Gap-10'>
             <UvIndex siUvIndexMax={uvMax}/>
-            <Visibilidad siUniVisibilidad={uniVisibilidad}/>
-            <Humedad siUniHumedad={uniHumedad}
-              siHumedad={humedad}
+            <Visibilidad siUniVisibilidad={uniVisibilidad}
+              siVisibilidad={visibilidad}
             />
+            <EstadoViento siUniAire={uniAire}
+              siAire={aire}
+            />
+            
           </div>
-          <div className='Contenidos Grid'>
+          <div className='Contenidos Grid Gap-10'>
             <AmaOca siAmanecer={amanecer}
               siAtardecer={atardecer}
             />
-            <EstadoViento siVelocidad={velocidadViento}
+            <VelocidadViento siVelocidad={velocidadViento}
               siDireccion={direccionViento}
               siUnidadVelViento={unidadVelViento}
               siUnidadDirViento={unidadDirViento}
             />
-            <Precipitacion siProbabilidadPre={probabilidadPre}/>
+            <Humedad siUniHumedad={uniHumedad}
+              siHumedad={humedad}
+            />
           </div>
         </div>
-      </div>
-      <div className='Datos-barra Back-Grad-NaranjaFuerte'>
-        <BarraClima siHorarios={horarios}
-          siTemperatura={temperatura}
-          siHumedad={humedadHoraria}
-          siMaxima={maxima}
-        />
       </div>
     </div>
   );

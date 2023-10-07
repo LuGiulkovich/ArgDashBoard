@@ -16,11 +16,12 @@ ChartJS.register (
 export const GaugeChart = ({siUvIndexMax}) => {
 
     const uvIndex = siUvIndexMax;
+    const totalUv = 11 - siUvIndexMax;
 
     const data = {
         labels: ['Uv'],
         datasets: [{
-            data: [uvIndex, 11],
+            data: [uvIndex, totalUv],
             backgroundColor: [ '#7c73e6' , '#feeae3'],
             borderColor: ['#fff', '#fff'],
             borderRadius: 10,
@@ -31,6 +32,11 @@ export const GaugeChart = ({siUvIndexMax}) => {
     }
 
     const options = {
+        plugins: {
+            legend: {
+              display: false // Establece display en false para ocultar las leyendas
+            },
+          },
     }
 
     const textoUv = {
@@ -43,7 +49,7 @@ export const GaugeChart = ({siUvIndexMax}) => {
 
             ctx.save();
             ctx.fillStyle = '#430f59';
-            ctx.font = 'bold 20px sans-serif';
+            ctx.font = '12px sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'baseline';
             ctx.fillText(siUvIndexMax, xCenter, yCenter)
