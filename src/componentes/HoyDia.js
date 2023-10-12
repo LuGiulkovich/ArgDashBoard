@@ -1,11 +1,16 @@
 import React from 'react'
 
-export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy, siComoEstaHoy, siClimaIcono}) => {
+export const HoyDia = ({ siClimaDatos, siClimaIconos }) => {
 
-    const datosDeHoy = siDdMmFfHh.split("T");
+    console.log(siClimaDatos);
+
+    /** Codigo para mostrar la fecha actual */
+    const datosDeHoy = siClimaDatos["current"]["time"].split("T");
+
     let nombreMes = '';
     let fechaDeHoy = '';
     const separarDatos = () => {
+        
         let dMA = datosDeHoy[0].split("-");
 
         switch (dMA[1]) {
@@ -45,17 +50,26 @@ export const HoyDia = ({siHoyTemperatura, siDdMmFfHh, siUniHoy, siComoEstaHoy, s
             case '12':
                 nombreMes = "Diciembre";
             break;
+            default:
+                nombreMes = "Enero";
         }
         fechaDeHoy = nombreMes + " " + dMA[2] + ", " + dMA[0];
     }
     separarDatos();
 
+
+    /** Codigo para mostrar el estado del clima actual */
+    const codigoClima = siClimaDatos["current"]["weathercode"];
+
+    let siComoEstaHoy = siClimaIconos[codigoClima]["name"];
+    let siIconoHoy = siClimaIconos[codigoClima]["image_src"];
+
     return (
         <div className='Back-Grad-NaranjaFuerte Radius-10 Flex'>
-            <img src={siClimaIcono} alt='Nublado' width={"140vw"}/>
+            <img src={siIconoHoy} alt='Nublado' width={"140vw"}/>
             <div className='HoyDia-Datos Grid'>
                 <h3>{siComoEstaHoy}</h3>
-                <h3>{siHoyTemperatura}{siUniHoy}</h3>
+                <h3>{siClimaDatos["current"]["temperature_2m"]}{siClimaDatos["current_units"]["temperature_2m"]}</h3>
                 <h4>{fechaDeHoy}</h4>
             </div>
             

@@ -25,5 +25,3 @@ Para ingresar a la pagina aquí tienes el link uWu:
 * [Create a Gauge Graphic] (https://www.youtube.com/watch?v=OSwrrx-IJK4)
 
 * [Text on Gauge Chart] (https://www.youtube.com/watch?v=KanFwS3U8qM)
-
-*

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Localidad = ({siLocalidad}) => {
+export const Localidad = ({siClimaDatos}) => {
   return (
     <div className='Localidad Back-Grad-Naranja Radius-10 TA-Center'>
-        <p>{siLocalidad}</p>
+        <p>{siClimaDatos["timezone"]}</p>
     </div>
   )
 }
