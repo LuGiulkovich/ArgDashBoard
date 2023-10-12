@@ -7,7 +7,7 @@ export const Precipitacion = ({siProbabilidadPre}) => {
         <p className='Letra-gris'>Precipitación</p>
         <div className='Flex'>
             <h1 className='Letra-35'>{siProbabilidadPre}</h1>
-            <img src={gotas} alt='Atardecer' width={'50px'}></img>
+            <img src={gotas} alt='Gotas' width={'50px'}></img>
         </div>
         
     </div>
