@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Visibilidad = ({siUniVisibilidad, siVisibilidad}) => {
+export const Visibilidad = ({ siClimaDatos }) => {
 
+  let siVisibilidad = siClimaDatos["hourly"]["visibility"][0];
+  let siUniVisibilidad = siClimaDatos["hourly_units"]["visibility"];
   let estadoVisibilidad;
 
   const rangoVisibilidad = ["Sin Visibilidad", "Muuy poca", "Escasa", "Moderada", "Buena", "Muy Buena", "Excelente"];

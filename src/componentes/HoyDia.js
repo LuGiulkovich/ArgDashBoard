@@ -1,9 +1,6 @@
 import React from 'react'
 
 export const HoyDia = ({ siClimaDatos, siClimaIconos }) => {
-
-    console.log(siClimaDatos);
-
     /** Codigo para mostrar la fecha actual */
     const datosDeHoy = siClimaDatos["current"]["time"].split("T");
 

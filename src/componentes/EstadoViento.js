@@ -1,8 +1,10 @@
 import React from 'react'
 
-export const EstadoViento = ({siAire, siUniAire}) => {
+export const EstadoViento = ({ siAireDatos }) => {
 
     let estadoAire;
+    let siUniAire = siAireDatos["current_units"]["time"];
+    let siAire = siAireDatos["current"]["us_aqi"];
 
     const rangoAire = ["Bueno", "Moderado", "Insano"];
 

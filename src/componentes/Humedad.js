@@ -1,11 +1,12 @@
 import React from 'react'
 import humedadIcon from '../iconos/humidity.svg';
 
-export const Humedad = ({siUniHumedad, siHumedad}) => {
+export const Humedad = ({ siClimaDatos }) => {
 
   let humedad;
+  const siUniHumedad = siClimaDatos["current_units"]["relativehumidity_2m"];
+  const pseudoHumedad = siClimaDatos["current"]["relativehumidity_2m"];
 
-  const pseudoHumedad = siHumedad[0];
   const rangoHumedad = ["Seco", "Normal", "Húmedo"];
 
   if (pseudoHumedad > 0 && pseudoHumedad <= 40) {

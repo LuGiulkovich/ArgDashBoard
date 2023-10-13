@@ -1,8 +1,15 @@
 import React from 'react'
 
-export const VelocidadViento = ({ siVelocidad, siUnidadVelViento ,siDireccion, siUnidadDirViento }) => {
+export const VelocidadViento = ({ siClimaDatos }) => {
 
   let estadoViento;
+
+  let siVelocidad = siClimaDatos["current"]["windspeed_10m"];
+  let siUnidadVelViento = siClimaDatos["current_units"]["windspeed_10m"];
+
+  let siDireccion = siClimaDatos["current"]["winddirection_10m"];
+  let siUnidadDirViento = siClimaDatos["current_units"]["winddirection_10m"];
+
 
   const rangoViento = ["Tranquilo", "Suave", "Moderado", "Vivo", "Fuerte", "Muy Fuerte", "Masivo", "Huracanes"];
 

@@ -2,7 +2,10 @@ import React from 'react'
 import amanecerIcon from '../iconos/sunrise.svg';
 import atardercerIcon from '../iconos/sunset.svg';
 
-export const AmaOca = ({ siAmanecer, siAtardecer }) => {
+export const AmaOca = ({ siClimaDatos }) => {
+
+  let siAmanecer = siClimaDatos["daily"]["sunrise"];
+  let siAtardecer = siClimaDatos["daily"]["sunset"];
 
   const amanecer = siAmanecer[0].split('T');
   const atardecer = siAtardecer[0].split("T");

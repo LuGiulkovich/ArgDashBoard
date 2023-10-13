@@ -1,11 +1,9 @@
 import React from 'react'
-//import uVIndex6 from '../iconos/uv-index-6.svg';
 import { GaugeChart } from './EjemploChart/GaugeChart';
 
-//<img src={uVIndex6} alt='uVIndex6'/>
+export const UvIndex = ({ siClimaDatos }) => {
 
-export const UvIndex = ({siUvIndexMax}) => {
-
+  let siUvIndexMax = siClimaDatos["daily"]["uv_index_max"];
   let estadoUv;
 
   const rangosUv = ["Bajo", "Moderado", "Alto", "Muy Alto", "Extremo"];
