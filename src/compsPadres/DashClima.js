@@ -16,9 +16,6 @@ export const DashClima = ({ siClimaDatos, siClimaIconos, siCalidadAire}) => {
 
   return (
     <div className='Dash-clima'>
-      <div className='Datos-barra Back-Grad-NaranjaFuerte'>
-        <BarraClima siClimaDatos={siClimaDatos}/>
-      </div>
       <div className='Datos-importantes Flex Gap-10'>
         <div className='Clima-Hoy Grid Gap-10'>
           <HoyDia siClimaDatos={siClimaDatos}
@@ -38,6 +35,9 @@ export const DashClima = ({ siClimaDatos, siClimaIconos, siCalidadAire}) => {
             <Humedad siClimaDatos={siClimaDatos}/>
           </div>
         </div>
+      </div>
+      <div className='Datos-barra Back-Grad-NaranjaFuerte'>
+        <BarraClima siClimaDatos={siClimaDatos}/>
       </div>
     </div>
   )
