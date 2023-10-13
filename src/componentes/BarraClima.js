@@ -24,7 +24,11 @@ ChartJS.register(
 
 
 
-export default function BarraClima({ siHorarios, siTemperatura, siMaxima }) {
+export default function BarraClima({ siClimaDatos }) {
+
+  let siTemperatura = siClimaDatos["hourly"]["temperature_2m"];
+  let siHorarios = siClimaDatos["hourly"]["time"];
+  let siMaxima = siClimaDatos["daily"]["temperature_2m_max"];
 
   const hora = siHorarios;
   let dia;
