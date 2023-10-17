@@ -240,9 +240,10 @@
 
   /* Estilos para el div que contiene toda la info */
   .Datos-importantes {
-    width: 100vw;
-    height: 25vh;
     justify-content: center;
+    border: red 3px solid;
+    width: 94vw;
+    height: 25vh;
   }
 
   .Datos-importantes p {
@@ -262,12 +263,14 @@
 
   /* Estilos para el div que contiene los datos de ahorita (Naranja Deg)*/
   .Clima-Hoy {
-    width: 50vw;
+    border: green 3px solid;
+    width: 44vw;
   }
 
   /* Estilos para el div que contiene los datos del dia (Blancos) */
   .Datos-Hoy {
     gap: 0;
+    border: green 3px solid;
     width: 50vw;
     justify-content: center;
     text-align: center;
