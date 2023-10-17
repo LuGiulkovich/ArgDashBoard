@@ -43,7 +43,7 @@ function App() {
   return (
     <div className='DashBoard'>
       <div className='mensaje-cargando'>{loading && <h1>Cargando...</h1>}</div>
-      <div className='Contenedor-Clima'>{!loading && datosClima && <DashClima siClimaDatos={datosClima} siClimaIconos={climaIconos} siCalidadAire={calidadAire}/>}</div>
+      <div className='Contenedor-Clima'>{!loading && datosClima && calidadAire && <DashClima siClimaDatos={datosClima} siClimaIconos={climaIconos} siCalidadAire={calidadAire}/>}</div>
     </div>
   );
 }
