@@ -23,13 +23,13 @@ export const DashClima = ({ siClimaDatos, siClimaIconos, siCalidadAire}) => {
           <Localidad siClimaDatos={siClimaDatos}/>
           <MinimaMaxima siClimaDatos={siClimaDatos}/>
         </div>
-        <div className='Datos-Hoy Flex Gap-10 Border-red'>
-          <div className='Contenidos Grid Gap-10 Border-blue'>
+        <div className='Datos-Hoy Flex Gap-10'>
+          <div className='Contenidos Grid Gap-10'>
             <UvIndex siClimaDatos={siClimaDatos}/>
             <Visibilidad siClimaDatos={siClimaDatos}/>
             <EstadoViento siCalidadAire={siCalidadAire}/>
           </div>
-          <div className='Contenidos Grid Gap-10 Border-green'>
+          <div className='Contenidos Grid Gap-10'>
             <AmaOca siClimaDatos={siClimaDatos}/>
             <VelocidadViento siClimaDatos={siClimaDatos}/>
             <Humedad siClimaDatos={siClimaDatos}/>
