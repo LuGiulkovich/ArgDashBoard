@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ArgDashBoard/static/css/main.37c25fd4.css",
-    "main.js": "/ArgDashBoard/static/js/main.0bbf1771.js",
+    "main.js": "/ArgDashBoard/static/js/main.e3c7b5ea.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
     "static/media/1366_2000.jpg": "/ArgDashBoard/static/media/1366_2000.ccbefc7ca2215e427e84.jpg",
     "static/media/humidity.svg": "/ArgDashBoard/static/media/humidity.764c599eb3217ae1e79e62a0310dc95a.svg",
@@ -11,11 +11,11 @@
     "static/media/pressure-low.svg": "/ArgDashBoard/static/media/pressure-low.86dd429911b42f08b554111a7a673bf0.svg",
     "index.html": "/ArgDashBoard/index.html",
     "main.37c25fd4.css.map": "/ArgDashBoard/static/css/main.37c25fd4.css.map",
-    "main.0bbf1771.js.map": "/ArgDashBoard/static/js/main.0bbf1771.js.map",
+    "main.e3c7b5ea.js.map": "/ArgDashBoard/static/js/main.e3c7b5ea.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37c25fd4.css",
-    "static/js/main.0bbf1771.js"
+    "static/js/main.e3c7b5ea.js"
   ]
 }
