@@ -46,7 +46,7 @@ export const VelocidadViento = ({ siClimaDatos }) => {
   }
 
   return (
-    <div className='Back-fff Radius-10 Grid'>
+    <div className='VelocidadViento Back-fff Radius-10 Grid'>
       <div>
         <p className='Letra-gris'>Velocidad del Viento</p>
         <h1 className='Letra-35'>{siVelocidad}<span className='Letra-t2'>{siUnidadVelViento}</span> {estadoViento}<span className='Letra-t2'></span></h1>

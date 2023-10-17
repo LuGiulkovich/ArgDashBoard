@@ -23,6 +23,7 @@ export const UvIndex = ({ siClimaDatos }) => {
   return (
     <div className='uVIndex Back-fff Radius-10'>
         <p className='Letra-gris'>UV INDEX</p>
+        <h1 className='Letra-35'>{siUvIndexMax}</h1>
         <div className='UvIndex-Gauge TA-Center'>
           <GaugeChart siUvIndexMax={siUvIndexMax}/>
         </div>

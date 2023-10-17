@@ -19,7 +19,7 @@ export const EstadoViento = ({ siCalidadAire }) => {
     }
 
   return (
-    <div className='Back-fff Radius-10'>
+    <div className='CalidadAire Back-fff Radius-10'>
         <p className='Letra-gris'>Calidad del Aire</p>
         <h1 className='Letra-35'>{siAire}{siUniAire}</h1>
         <p className='Letra-35'>{estadoAire}</p>

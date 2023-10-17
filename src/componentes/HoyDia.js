@@ -64,8 +64,8 @@ export const HoyDia = ({ siClimaDatos, siClimaIconos }) => {
     let siIconoHoy = siClimaIconos[codigoClima]["image_src"];
 
     return (
-        <div className='Back-Grad-NaranjaFuerte Radius-10 Flex'>
-            <img src={siIconoHoy} alt='Nublado' width={"140vw"}/>
+        <div className='Hoy-Dia Back-Grad-NaranjaFuerte Radius-10 Flex'>
+            <img src={siIconoHoy} alt='Nublado' width={"140vw"} className='Hoy-Dia-img'/>
             <div className='HoyDia-Datos Grid'>
                 <h3>{siComoEstaHoy}</h3>
                 <h3>{siClimaDatos["current"]["temperature_2m"]}{siClimaDatos["current_units"]["temperature_2m"]}</h3>

@@ -18,7 +18,7 @@ export const Humedad = ({ siClimaDatos }) => {
   }
 
   return (
-    <div className='Back-fff Radius-10 Flex Around'>  
+    <div className='Humedad Back-fff Radius-10 Flex Around'>  
         <div className='Grid'>
           <p className='Letra-gris p-Humedad'>Humedad</p>
           <h1 className='Letra-35'>{pseudoHumedad}<span>{siUniHumedad} {humedad}</span></h1>
