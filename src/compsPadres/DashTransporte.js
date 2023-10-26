@@ -1,14 +1,38 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 import Buses from '../Json/transporteApi1.json';
 
 export const DashTransporte = () => {
 
-    const position = [-34.65629, -58.65038]
 
-const bus1 = [Buses[0].latitude, Buses[0].longitude ];
-const bus2 = [Buses[1].latitude, Buses[1].longitude ];
-const bus3 = [Buses[2].latitude, Buses[2].longitude ];
+
+    const busN60 = Buses.filter((bus) => bus.agency_id === 60);
+
+    console.log(busN60);
+
+    const latitudes = busN60.map((lat) => lat.latitude);
+    const longitudes = busN60.map((lon) => lon.longitude);
+
+
+    let sumaLats = 0;
+    let sumaLogs = 0;
+
+    let cantLats = latitudes.length;
+    let cantLogs = longitudes.length;
+
+
+    for (let i = 0; i < latitudes.length; i++) {
+        sumaLats += latitudes[i];
+    }
+
+    for (let i = 0; i < longitudes.length; i++) {
+        sumaLogs += longitudes[i];
+    }
+
+    let promedioLat = sumaLats / cantLats;
+    let promedioLong = sumaLogs / cantLogs;
+
+    const position = [promedioLat, promedioLong];
 
     /*const {segundos, setSegundos} = useState(0);*/
 
@@ -26,23 +50,18 @@ const bus3 = [Buses[2].latitude, Buses[2].longitude ];
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={bus1}>
-                    <Popup>
-                        Bus 1
-                    </Popup>
-                </Marker>
-                <Marker position={bus2}>
-                    <Popup>
-                        Bus 2
-                    </Popup>
-                </Marker>
-                <Marker position={bus3}>
-                    <Popup>
-                        Bus 3
-                    </Popup>
-                </Marker>
+
+                {busN60.map((item, index) => {
+                    return (
+                        <Marker key={index} position={[item["latitude"], item["longitude"]]}>
+                            <Popup>
+                                Linea N°: {item["agency_id"]}, Velocidad: {item["speed"]}Km.
+                            </Popup>
+                        </Marker>
+                    );
+                })}
             </MapContainer>
-        </div>
+        </div >
 
     )
 }
