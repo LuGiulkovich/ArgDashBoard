@@ -46,7 +46,7 @@ function App() {
       <div className='mensaje-cargando'>{loading && <h1>Cargando...</h1>}</div>
       <div className='Flex'>
          <div className='Contenedor-Clima'>{!loading && datosClima && calidadAire && <DashClima siClimaDatos={datosClima} siClimaIconos={climaIconos} siCalidadAire={calidadAire}/>}</div>
-         <div className='Border-blue'>{!loading && <DashTransporte />}</div>
+         <div className=''>{!loading && <DashTransporte />}</div>
       </div>
      
     </div>
