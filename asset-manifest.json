@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ArgDashBoard/static/css/main.36fb4a4a.css",
-    "main.js": "/ArgDashBoard/static/js/main.c364b579.js",
+    "main.js": "/ArgDashBoard/static/js/main.f8c5e7bb.js",
     "static/js/787.545aecf5.chunk.js": "/ArgDashBoard/static/js/787.545aecf5.chunk.js",
     "static/media/1366_2000.jpg": "/ArgDashBoard/static/media/1366_2000.ccbefc7ca2215e427e84.jpg",
     "static/media/humidity.svg": "/ArgDashBoard/static/media/humidity.764c599eb3217ae1e79e62a0310dc95a.svg",
@@ -11,11 +11,11 @@
     "static/media/pressure-high.svg": "/ArgDashBoard/static/media/pressure-high.74c3eb4ad723a16b3807a04afbb964fb.svg",
     "static/media/pressure-low.svg": "/ArgDashBoard/static/media/pressure-low.86dd429911b42f08b554111a7a673bf0.svg",
     "main.36fb4a4a.css.map": "/ArgDashBoard/static/css/main.36fb4a4a.css.map",
-    "main.c364b579.js.map": "/ArgDashBoard/static/js/main.c364b579.js.map",
+    "main.f8c5e7bb.js.map": "/ArgDashBoard/static/js/main.f8c5e7bb.js.map",
     "787.545aecf5.chunk.js.map": "/ArgDashBoard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36fb4a4a.css",
-    "static/js/main.c364b579.js"
+    "static/js/main.f8c5e7bb.js"
   ]
 }
