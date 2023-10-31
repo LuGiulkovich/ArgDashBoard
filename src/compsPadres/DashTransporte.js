@@ -3,23 +3,19 @@ import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 import Buses from '../Json/transporteApi1.json';
 import sunrise from '../iconos/sunrise.svg';
 
-export const DashTransporte = () => {
+export const DashTransporte = ({siTransDatos}) => {
 
-
-    const numeros = Buses.map((bus) => bus.agency_id);
-    console.log(numeros);
-
+    const [apiDatos, setApiDatos] = useState(siTransDatos);
+    console.log(apiDatos);
     /** Filtro por agencia id  */
-    const busId60 = Buses.filter((bus) => bus.agency_id === 60).slice(0, 11);
-    const busId82 = Buses.filter((bus) => bus.agency_id === 82).slice(0, 11);
-    const busId72 = Buses.filter((bus) => bus.agency_id === 72).slice(0, 11);
-    const busId63 = Buses.filter((bus) => bus.agency_id === 63).slice(0, 11);
-    const busId14 = Buses.filter((bus) => bus.agency_id === 14).slice(0, 11);
+    const busId60 = apiDatos.map((bus) => bus.agency_id === 60).slice(0, 11);
+    /* const busId82 = siTransDatos.filter((bus) => bus.agency_id === 82).slice(0, 11);
+    const busId72 = siTransDatos.filter((bus) => bus.agency_id === 72).slice(0, 11);
+    const busId63 = siTransDatos.filter((bus) => bus.agency_id === 63).slice(0, 11);
+    const busId14 = siTransDatos.filter((bus) => bus.agency_id === 14).slice(0, 11); */
     
-    const todasLineas = busId60.concat(busId82, busId72, busId63, busId14);
+    const todasLineas = busId60/* .concat(busId82, busId72, busId63, busId14) */;
     
-    
-
     /** Determino la posicion para que este siempre centrado */
     const latitudes = todasLineas.map((lat) => lat.latitude);
     const longitudes = todasLineas.map((lon) => lon.longitude);
